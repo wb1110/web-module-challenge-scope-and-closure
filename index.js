@@ -28,11 +28,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+  counter1 will add 1 to count and will not accumulate because count is within the function. counter2 will keep adding.
   
   2. Which of the two uses a closure? How can you tell?
+
+  counter2 because it calls the count variable outside the function and when you log it, it stores the increments.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+     counter 1 would be preferable if you wanted to increment just within the function scope, and counter 2 would be better if you wanted to permanetly log how many times a function ran.
 */
 
 // counter1 code
