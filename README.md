@@ -61,6 +61,9 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is when a function reaches outside of it's scope to obtain a variable. However, variables within a function cannot be accessed from outside in.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -79,11 +82,20 @@ const zoesRoll = personalDice("Zoe");
 
 dansRoll();
 dansRoll();
+
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+console.log(`${name} rolled a ${newRoll}`) is reaching outside of the unnamed function to the personalDice function to obtain  name.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+"Dan" will always be the same, but "newRoll" will be a random number 1-6
+
 c. What is the lexical scope of `newRoll`? 
+
+'newRoll' can only be called within the unnamed function.
 
 
 ### Task 3 - Stretch Goals
