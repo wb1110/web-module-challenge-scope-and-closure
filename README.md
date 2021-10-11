@@ -62,7 +62,7 @@ Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
 
-Closure is when a function reaches outside of it's scope to obtain a variable. However, variables within a function cannot be accessed from outside in.
+Closure is when an inner function reaches to an outside function to grab a value defined in the outer function. 
 
 2. Study the following code, then answer the questions below.
 
